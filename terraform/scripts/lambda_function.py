@@ -11,9 +11,6 @@ s3 = boto3.client('s3')
 
 
 def lambda_handler(event, context):
-    #print("Received event: " + json.dumps(event, indent=2))
-
-    # Get the object from the event and show its content type
     Bucket_A = event['Records'][0]['s3']['bucket']['name']
     Bucket_B = os.environ.get('Bucket_B')
 
