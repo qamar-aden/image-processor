@@ -28,7 +28,7 @@ resource "aws_iam_user_policy" "user_a_policy" {
 }
 
 resource "aws_iam_user_policy" "user_b_policy" {
-    user     = var.user_vars.user-a.user
+    user     = var.user_vars.user-b.user
     policy   = data.template_file.iam_user_b_access_role_policy.rendered
     depends_on = [
       aws_iam_user.user
