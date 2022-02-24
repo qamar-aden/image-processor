@@ -5,8 +5,6 @@ import os
 from os import environ
 import piexif
 
-print('Loading function')
-
 s3 = boto3.client('s3')
 
 
