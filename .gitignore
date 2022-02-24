@@ -1,0 +1,4 @@
+*terraform-variables-generator*
+*terraform.tfstate*
+*.terraform.lock*
+.terraform
